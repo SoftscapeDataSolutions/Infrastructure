@@ -15,9 +15,9 @@ namespace Softscape.Infrastructure.PCL.Services.Abstract
 		bool NavigateTo(Type type, object parameter);
 		bool GoBack();
 
-		Task DispatcherNavigateTo(Type type);
-		Task DispatcherNavigateTo(Type type, object parameter);
-		Task DispatcherGoBack();
+		Task DispatcherNavigateToAsync(Type type);
+		Task DispatcherNavigateToAsync(Type type, object parameter);
+		Task DispatcherGoBackAsync();
 
 		bool CanGoBack { get; }
 

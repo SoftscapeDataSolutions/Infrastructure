@@ -34,17 +34,17 @@ namespace Softscape.Infrastructure.WPA81.MVVM
 
 		public Task DispatcherNavigateTo(Type type)
 		{
-			return GetNavigationService().DispatcherNavigateTo(type);
+			return GetNavigationService().DispatcherNavigateToAsync(type);
 		}
 
 		public Task DispatcherNavigateTo(Type type, object parameter)
 		{
-			return GetNavigationService().DispatcherNavigateTo(type, parameter);
+			return GetNavigationService().DispatcherNavigateToAsync(type, parameter);
 		}
 
 		public Task DispatcherGoBack()
 		{
-			return GetNavigationService().DispatcherGoBack();
+			return GetNavigationService().DispatcherGoBackAsync();
 		}
 		#endregion
 
