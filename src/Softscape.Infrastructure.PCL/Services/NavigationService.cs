@@ -15,7 +15,7 @@ namespace Softscape.Infrastructure.PCL.Services
 		/// </summary>
 		private Frame _mainFrame;
 
-		public virtual Task DispatcherGoBack()
+		public virtual Task DispatcherGoBackAsync()
 		{
 			throw new NotImplementedException();
 		}
@@ -58,12 +58,12 @@ namespace Softscape.Infrastructure.PCL.Services
 			return true;
 		}
 
-		public virtual Task DispatcherNavigateTo(Type type)
+		public virtual Task DispatcherNavigateToAsync(Type type)
 		{
 			throw new NotImplementedException();
 		}
 
-		public virtual Task DispatcherNavigateTo(Type type, object parameter)
+		public virtual Task DispatcherNavigateToAsync(Type type, object parameter)
 		{
 			throw new NotImplementedException();
 		}
